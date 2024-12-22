@@ -16,13 +16,19 @@ function guessNumb(num) {
 // #4
 const arr = [1, 2, 3, 4, 5];
 const applyCallbackToEachElement = (arr, callback) => {
-  const result = [];
+let squaredArray = [];
   for (let i = 0; i < arr.length; i++) {
-    result.push(callback(arr[i])); 
+ let number = arr[i]
+ callback(number)
+ squaredArray.push(number)
   }
-  return result;
+  return squaredArray;
 };
-const squareCallback = (num) => num * num; 
+const arr = [1, 2, 3, 4, 5];
+const squareCallback = (number) =>{ 
+ const total = number * number;
+ return total
+}; 
 const result = applyCallbackToEachElement(arr, squareCallback);
 console.log(result);
 
