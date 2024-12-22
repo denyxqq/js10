@@ -14,7 +14,7 @@ function guessNumb(num) {
 
 
 // #4
-const arr = [1, 2, 33, 65, 15, 34, 27, 88, 52, 42];
+const arr = [1, 2, 3, 4, 5];
 const applyCallbackToEachElement = (arr, callback) => {
   const result = [];
   for (let i = 0; i < arr.length; i++) {
@@ -22,7 +22,6 @@ const applyCallbackToEachElement = (arr, callback) => {
   }
   return result;
 };
-
 const squareCallback = (num) => num * num; 
 const result = applyCallbackToEachElement(arr, squareCallback);
 console.log(result);
